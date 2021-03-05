@@ -62,37 +62,5 @@ void Nokemon::setNombre(string _nombre) {
 	this->nombre = _nombre;
 }
 
-void inicializarAtaques(){
-	int random;
-	srand (time(0));
-	for(int i=0; i<=6;i++){
-		//imprime random de 1 a 6 
-		random=1+(rand%6);
-	}
-	switch(random){
-		case 1:{
-			
-			break;
-		}
-		case 2:{
-			
-			break;
-		}
-		case 3:{
-			
-			break;
-		}
-		case 4:{
-			
-			break;
-		}
-		case 5:{
-			
-			break;
-		}
-		case 6:{
-			
-			break;
-		}
-	}
+void Nokemon::inicializarAtaques(){
 }
