@@ -8,10 +8,11 @@ using namespace std;
 
 class AguacateMon : public NokemonHierba
 {
+	private:
+		
 	public:
 		AguacateMon();
 		~AguacateMon();
-	protected:
 };
 
 #endif

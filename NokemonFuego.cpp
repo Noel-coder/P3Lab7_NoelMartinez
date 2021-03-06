@@ -8,13 +8,8 @@ NokemonFuego::~NokemonFuego()
 {
 }
 
-void inicializarAtaques(){
-	int random;
-	srand (time(0));
-	for(int i=0; i<=6;i++){
-		//imprime random de 1 a 6 
-		random=1+(rand%6);
-	}
+void NokemonFuego::inicializarAtaques(int random){
+
 	switch(random){
 		case 1:{
 			AtaquesFuego.push_back(new Ataque("Comal Ardiente","Fuego",12));

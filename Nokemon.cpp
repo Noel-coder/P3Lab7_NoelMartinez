@@ -1,5 +1,5 @@
 #include "Nokemon.h"
-#include "ctime
+#include <ctime>
 
 
 Nokemon::Nokemon() {
@@ -53,6 +53,9 @@ int Nokemon::getNivel() {
 	return this -> nivel;
 }
 void Nokemon::setNivel(int _nivel) {
+	srand (time(0));
+	//random de 5 a 10
+	nivel=1+(rand()%10);
 	this->nivel = _nivel;
 }
 string Nokemon::getNombre() {
@@ -62,5 +65,5 @@ void Nokemon::setNombre(string _nombre) {
 	this->nombre = _nombre;
 }
 
-void Nokemon::inicializarAtaques(){
+void Nokemon::inicializarAtaques() {
 }

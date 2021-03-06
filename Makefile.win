@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Nokemon.o Ataque.o NokemonFuego.o NokemonHierba.o NokemonHielo.o AnafreMon.o AguacateMon.o CharamuscoMon.o
-LINKOBJ  = Nokemon.o Ataque.o NokemonFuego.o NokemonHierba.o NokemonHielo.o AnafreMon.o AguacateMon.o CharamuscoMon.o
+OBJ      = Nokemon.o Ataque.o NokemonFuego.o NokemonHierba.o NokemonHielo.o AnafreMon.o AguacateMon.o CharamuscoMon.o mainLab7.o SimuladorBatalla.o
+LINKOBJ  = Nokemon.o Ataque.o NokemonFuego.o NokemonHierba.o NokemonHielo.o AnafreMon.o AguacateMon.o CharamuscoMon.o mainLab7.o SimuladorBatalla.o
 LIBS     = -L"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
 CXXINCS  = -I"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
@@ -47,3 +47,9 @@ AguacateMon.o: AguacateMon.cpp
 
 CharamuscoMon.o: CharamuscoMon.cpp
 	$(CPP) -c CharamuscoMon.cpp -o CharamuscoMon.o $(CXXFLAGS)
+
+mainLab7.o: mainLab7.cpp
+	$(CPP) -c mainLab7.cpp -o mainLab7.o $(CXXFLAGS)
+
+SimuladorBatalla.o: SimuladorBatalla.cpp
+	$(CPP) -c SimuladorBatalla.cpp -o SimuladorBatalla.o $(CXXFLAGS)

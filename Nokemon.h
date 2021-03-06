@@ -4,11 +4,10 @@
 #include <vector>
 #include <string>
 using namespace std;
-class Nokemon
-{
+class Nokemon {
 	private:
 		double defensa;
-		double ataque; 
+		double ataque;
 		vector <Ataque*> listaAtaques;
 		double saludActual;
 		double saludMaxima;

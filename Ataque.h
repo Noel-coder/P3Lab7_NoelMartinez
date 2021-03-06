@@ -2,6 +2,7 @@
 #define ATAQUE_H
 #include <string>
 using namespace std;
+
 class Ataque
 {
 	private:
@@ -10,7 +11,7 @@ class Ataque
 		int poder;
 	public:
 		Ataque();
-		Ataque(string,string,string);
+		Ataque(string,string,int);
 		~Ataque();
 		string getNombre();
 		void setNombre(string);

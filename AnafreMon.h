@@ -13,6 +13,7 @@ class AnafreMon : public NokemonFuego
 	public:
 		AnafreMon();
 		~AnafreMon();
+		AnafreMon(int,string);
 };
 
 #endif

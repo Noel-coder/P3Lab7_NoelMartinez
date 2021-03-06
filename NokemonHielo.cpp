@@ -8,13 +8,7 @@ NokemonHielo::~NokemonHielo()
 {
 }
 
-void inicializarAtaques(){
-	int random;
-	srand (time(0));
-	for(int i=0; i<=6;i++){
-		//imprime random de 1 a 6 
-		random=1+(rand%6);
-	}
+void NokemonHielo::inicializarAtaques(int random){
 	switch(random){
 		case 1:{
 			AtaquesHielo.push_back(new Ataque("Aliento Helado","Hielo",14));

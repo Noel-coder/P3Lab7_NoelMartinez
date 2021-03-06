@@ -4,6 +4,7 @@
 #include "Nokemon.h"
 #include <vector>
 #include <string>
+#include <ctime>
 using namespace std;
 
 class NokemonHierba : public Nokemon
@@ -13,7 +14,7 @@ class NokemonHierba : public Nokemon
 	public:
 		NokemonHierba();
 		~NokemonHierba();
-	
+		void inicializarAtaques(int);
 };
 
 #endif
